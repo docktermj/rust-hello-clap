@@ -2,5 +2,14 @@
 name = "rust-hello-clap"
 version = "0.1.0"
 edition = "2024"
+description = """
+An introduction to the clap crate.
+
+This is an example of a
+multi line description.
+"""
+
 
 [dependencies]
+clap = { version = "4.5.53", features = ["derive", "env"] }
+clap_complete = "4.5.62"
